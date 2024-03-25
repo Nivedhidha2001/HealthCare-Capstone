@@ -1,0 +1,19 @@
+<div>
+    <h2 style="color:DodgerBlue;">Users List</h2>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th style="color:DodgerBlue;">Id</th>
+                <th style="color:DodgerBlue;">UserName</th>
+                <th style="color:DodgerBlue;">Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let u of users">
+                <td>{{u.id}}</td>
+                <td>{{u.username}}</td>
+                <td>{{u.email}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
